@@ -46,5 +46,20 @@ make
 
 ---
 
+### Usage
+
 Once compiled you will also need to make sure you have setup the openvino vars before running FlowCV Editor or else you will need to copy over all of the dependency libraries into the plugin folder for it to work.
+
+You will also need the following models (Use the OpenVino Model Downloader):
+* architecture_type = openpose
+  - human-pose-estimation-0001
+* architecture_type = ae
+  - human-pose-estimation-0002
+  - human-pose-estimation-0003
+  - human-pose-estimation-0004
+  - human-pose-estimation-0005
+  - human-pose-estimation-0006
+  - human-pose-estimation-0007
+
+Supports FP32, FP16 and INT8
 
